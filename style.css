@@ -1,11 +1,13 @@
 @import url(reset.css);
 @import url('https://fonts.cdnfonts.com/css/creato-display');
 @import url('https://fonts.cdnfonts.com/css/dream-orphans');
+@import url('https://fonts.cdnfonts.com/css/oddval-text');
                 
 
 :root {
     --purple: #7E61BE;
     --darkpurple: #653893;
+    --lightpurple: #EDEFFC;
     --green: #B9BF02;
     --black: #1E1E1E;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -44,6 +46,7 @@ section {
     padding-top: 1rem;
 }
 
+/* this is the CSS for the navigation bar */
 header {
     font-family: var(--content-font);
     position: fixed;
@@ -98,6 +101,7 @@ header .icons #menu-bar{
     display: none;
 }
 
+/* this is the CSS for "WHY CHOOSE US" section */
 .img-slider {
     position: relative;
     top: 100px;
@@ -216,34 +220,218 @@ header .icons #menu-bar{
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
+
+/* this is the CSS for "HOW IT WORKS" section */
+/* the illustrations for this section is sourced from the Figma plugin "Icons8" */
+.steps {
+    margin: 0 auto;
+    padding-top: 20rem;
+    height: 1700px;
+    background: linear-gradient(#7E61BE 55%, #EDEFFC, #B9BF02);
+}
+
+.steps .heading {
+    color: white;
+}
+
+.steps .wrapper {
+    display: flex;
+}
+
+.steps .wrapper .login {
+    position: relative;
+    left: 0px;
+}
+
+.steps .wrapper .description, .steps .wrapper2 .description, .steps .wrapper3 .description {
+    display: inline-block;
+}
+
+.steps .wrapper .h1, .steps .wrapper2 .h1 {
+    font-family: 'Oddval Text', sans-serif;
+    color: var(--lightpurple);
+    font-size: 30em;
+    font-weight: bold;
+}
+
+.steps .wrapper .h2, .steps .wrapper2 .h2 {
+    font-family: 'Oddval Text', sans-serif;;
+    font-size: 10em;
+    color: var(--lightpurple);
+    line-height: 10px;
+    padding-left: 30px;
+}
+
+.steps .wrapper .p, .steps .wrapper2 .p {
+    color: white;
+    font-size: 2em;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+.steps .wrapper2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+}
+
+.steps .wrapper2 .h1, .steps .wrapper2 .h2, .steps .wrapper2 .p {
+    position: relative;
+    float: right;
+    padding-right: 30px;
+    align-items: right;
+}
+
+.steps .wrapper3 {
+    display: flex;
+    padding-top: 50px;
+}
+
+.steps .wrapper3 .description {
+    position: relative;
+    top: -30px;
+}
+
+.steps .wrapper3 .h1 {
+    font-family: 'Oddval Text', sans-serif;
+    color: var(--purple);
+    font-size: 30em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.steps .wrapper3 .h2 {
+    font-family: 'Oddval Text', sans-serif;;
+    font-size: 10em;
+    color: var(--purple);
+    line-height: 10px;
+    padding-left: 30px;
+}
+
+.steps .wrapper3 .p {
+    color: var(--darkpurple);
+    font-size: 2em;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+/* this is the CSS for "BROWSE OUR MENUS" section */
+.browse {
+    background: var(--green);
+    height: 500px;
+}
+
 .browse .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.5rem;
+    padding-top: 50px;
 }
 
 .browse .box-container .box {
     padding: 2.5rem;
-    background: white;
-    border-radius: .5rem;
-    border: .1rem solid rgba(0,0,0,.2);
-    box-shadow: var(--purple);
+    width: 20rem;
+    height: 19rem;
+    background: #EDEFFC;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
 }
 
-.browse .box-container .box img {
-    height: 17rem;
-    margin: 1rem 0;
+.browse .box-container .box:hover {
+    background: var(--purple);
+    color: var(--lightpurple);
+    scale: 110%;
 }
 
-.dishes .box-container .box h3 {
-    color: var(--black);
+.browse .box-container .box .image {
+    position: relative;
+    width: 12rem;
+    height: 9rem;
+    left: 15px;
+}
+
+.browse .box-container .box .image .gradient {
+    width: 12rem;
+    height: 9rem;
+    scale: 150%;
+    background-image: linear-gradient(to top, rgba(47, 47, 47, 0.7), rgba(255, 255, 255, 0.2));
+    position: relative;
+    object-fit: cover;
+    top: -82px;
+    border-radius: 8px;
+    z-index: 1;
+} 
+
+.browse .box-container .box .image img {
+    position: relative;
+    top: 9px;
+    width: 12rem;
+    height: 9rem;
+    scale: 150%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.browse .box-container .box .information h3, .browse .box-container .box .information2 h3 {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: -8px;
+    z-index: 10;
+    white-space: pre;
+}
+
+.browse .box-container .box .information2 h3 {
+    line-height: 10px;
+    bottom: 10px;
+}
+
+.browse .box-container .box .information span, .browse .box-container .box .information2 span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -25px;
     font-size: 2.5rem;
+    color: black;
+} 
+
+.browse .box-container .box .information span:hover, .browse .box-container .box .information2 span:hover {
+    color: white;
 }
 
+.browse .box-container .box .information2 span {
+    line-height: 0px;
+    bottom: -23px;
+}
 
+.browse .btn {
+    position: relative;
+    top: 20px;
+    width: 108.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--darkpurple);
+    background: var(--lightpurple);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 2rem 2rem;
+}
+
+.browse .btn:hover {
+    background: var(--darkpurple);
+    color: white;
+    letter-spacing: .1rem;
+}
 
 /*media queries for responsive design*/
 @media (max-width:991px) {
