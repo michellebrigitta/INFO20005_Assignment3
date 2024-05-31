@@ -191,24 +191,7 @@
     </div>
 
     <script>
-        const accordion = document.getElementsByClassName
-        ('content');
-
-        for (i = 0; i<accordion.length; i++ ) {
-            accordion[i].addEventListener('click', function(){
-                this.classList.toggle('active')
-            })
-        }
-
-        const accordion2 = document.getElementsByClassName('content2');
-
-        for (i = 0; i<accordion2.length; i++) {
-            accordion2[i].addEventListener('click', function(){
-                this.classList.toggle('active')
-            })
-        }
-
-        //NEW ACCORDIONNN
+        //this javascript code is sourced from CodingLab on YouTube on how to create an Accordion section (made with adjustments)
         const accordionContent = document.querySelectorAll(".accordion-content");
 
         accordionContent.forEach((item, index) => {
