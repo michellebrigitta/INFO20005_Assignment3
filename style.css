@@ -184,8 +184,8 @@ header .icons #menu-bar{
     text-transform: uppercase;
     display: inline-block;
     font-size: 1.7rem;
-    color: white;
-    background: var(--purple);
+    color: var(--darkpurple);
+    background: white;
     border-radius: .5rem;
     cursor: pointer;
     padding: .8rem 2rem;
@@ -194,7 +194,7 @@ header .icons #menu-bar{
 .img-slider .slide .info .btn:hover {
     background: var(--green);
     color: black;
-    letter-spacing: .1rem;
+    scale: 110%;
 }
 
 .img-slider .navigation {
@@ -322,7 +322,9 @@ header .icons #menu-bar{
 }
 
 .browse .box-container {
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.5rem;
     padding-top: 50px;
@@ -411,6 +413,11 @@ header .icons #menu-bar{
     bottom: -23px;
 }
 
+.browse .explore {
+    display: flex;
+    justify-content: center;
+}
+
 .browse .btn {
     position: relative;
     top: 20px;
@@ -431,6 +438,36 @@ header .icons #menu-bar{
     background: var(--darkpurple);
     color: white;
     letter-spacing: .1rem;
+}
+
+/* this is the CSS for footer section */
+.footer {
+    background: var(--purple);
+    color: white;
+}
+
+.footer .upper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.footer .upper .icons {
+    width: 125px;
+    scale: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .upper .details {
+    padding-top: 15px;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
 }
 
 /*media queries for responsive design*/

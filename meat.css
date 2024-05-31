@@ -104,7 +104,7 @@ header .icons #menu-bar{
 /* This is the CSS for Our Menus section */
 .dishes {
     background-image: linear-gradient(#EDEFFC, #7E61BE);
-    height: 2200px;
+    height: 860px;
 }
 
 /*
@@ -150,10 +150,8 @@ header .icons #menu-bar{
     background: var(--lightpurple);
     padding: 10px 5px 10px 5px;
     border-radius: 8px;
-    color: black;
     cursor: pointer;
 }
-
 
 .category-container .full:hover, .category-container .meat:hover, .category-container .poultry:hover,
 .category-container .seafood:hover, .category-container .vegetarian:hover, .category-container .desserts:hover,
@@ -178,14 +176,11 @@ header .icons #menu-bar{
 }
 
 /*this is the css for the dishes box*/
-
 .menus .box-container {
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    padding: 1px;
+    padding-top: 0px;
 }
 
 .menus .box-container .box {
