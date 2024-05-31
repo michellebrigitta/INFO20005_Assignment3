@@ -102,12 +102,12 @@ header .icons #menu-bar{
 }
 
 /* This is the CSS for Our Menus section */
+/*
 .dishes {
     background-image: linear-gradient(#EDEFFC, #7E61BE);
     height: 2200px;
-}
+} */
 
-/*
 .pattern img {
     display: flex;
     object-fit: cover;
@@ -117,7 +117,7 @@ header .icons #menu-bar{
     height: 2500px;
     width: auto;
     background-image: linear-gradient(#EDEFFC, #7E61BE);
-} */
+} 
 
 .menu {
     margin: 0 auto;

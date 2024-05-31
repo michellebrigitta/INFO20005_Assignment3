@@ -1,0 +1,263 @@
+@import url(reset.css);
+@import url('https://fonts.cdnfonts.com/css/creato-display');
+@import url('https://fonts.cdnfonts.com/css/dream-orphans');
+@import url('https://fonts.cdnfonts.com/css/oddval-text');
+                
+
+:root {
+    --purple: #7E61BE;
+    --darkpurple: #653893;
+    --lightpurple: #EDEFFC;
+    --green: #B9BF02;
+    --black: #1E1E1E;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --box-shadow2:0 .5rem 1.5rem rgba(126,97,190,.5);
+    --content-font: 'Creato Display', sans-serif;
+}
+
+* {
+    font-family: 'Creato Display', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Creato Display', sans-serif;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.heading {
+    text-align: center;
+    color: var(--darkpurple);
+    font-family: 'Dream Orphans', sans-serif;
+    font-weight: 700;
+    font-size: 7rem;
+    padding-top: 1rem;
+}
+
+/* this is the CSS for the navigation bar */
+header {
+    font-family: var(--content-font);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f3f3f3;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    font-weight: 400;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--purple);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: black;
+    background: var(--green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--purple);
+    border-radius: 50%;
+    background: #EDEFFC;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: black;
+    background: var(--green);
+    transform: rotate(-36deg);
+}
+
+header .icons #menu-bar{
+    display: none;
+}
+
+/* This is the CSS for the product card */
+.background {
+    background: var(--lightpurple);
+    height: 1500px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /*background-image: linear-gradient(#EDEFFC, #7E61BE);*/
+}
+
+/* for the product image (left side) */
+.image img {
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 540px;
+    top: 140px;
+    left: 50px;
+    box-shadow: var(--box-shadow2);
+    border-radius: 20px;
+}
+
+/* for the product details (right side) */
+.accordion {
+    position: relative;
+    top: 140px;
+    right: 40px;
+    max-width: 510px;
+    width: 100%;
+    background-color: #47484B;
+    margin: 0 15px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.accordion .details h2 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.accordion .details span {
+    display: flex;
+    position: relative;
+    top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+    line-height: 20px;
+    color: var(--lightpurple);
+}
+
+.accordion .accordion-content, .accordion .accordion-content2 {
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: var(--lightpurple);
+    color: black;
+    overflow: hidden;
+}
+
+.accordion-content.open {
+    padding-bottom: 20px;
+}
+
+.accordion-content .header, .accordion-content2 .header2 {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordion-content2 .header3 {
+    display: flex;
+    min-height: 50px;
+    padding: 0 30px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: #5C65AA;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.accordion-content.open .header {
+    background-color: var(--purple);
+    color: white;
+}
+
+.accordion-content .header .title {
+    font-weight: 500;
+}
+
+.accordion-content .description {
+    height: 0;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+
+.accordion-content .description b {
+    font-weight: 600;
+    color: var(--darkpurple);
+}
+
+.accordion-content.open .description {
+    padding-top: 10px;
+}
+
+.accordion-content .header h3 {
+    font-weight: 500;
+}
+
+.accordion-content .header2 {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.accordion-content2.open .header3 {
+    background: var(--green);
+    color: black;
+}
+
+.accordion-content2 .description2 .info2 {
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+
+.accordion-content2.open .description2 {
+    padding-top: 10px;
+    padding-bottom: 210px;
+    background: var(--purple);
+}
+
+.accordion-content2 .description2 .info2 .right {
+    text-align: right;
+}
+
+
+
+
+
+
+
