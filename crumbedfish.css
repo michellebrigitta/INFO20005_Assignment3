@@ -12,7 +12,7 @@
     --black: #1E1E1E;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
     --box-shadow2:0 .5rem 1.5rem rgba(126,97,190,.5);
-    --box-shadow3:0 .5rem 5rem rgba(0,0,0,.5);
+    --box-shadow3:0 .5rem 1.5rem rgba(0,0,0,.5);
     --content-font: 'Creato Display', sans-serif;
 }
 
@@ -102,7 +102,7 @@ header .icons #menu-bar{
 /* This is the CSS for the product card */
 .background {
     background: var(--lightpurple);
-    height: 1600px;
+    height: 1800px;
 }
 
 .container {
@@ -116,7 +116,7 @@ header .icons #menu-bar{
     display: flex;
     position: relative;
     width: 700px;
-    height: 474px;
+    height: 514px;
     top: 140px;
     left: 50px;
     box-shadow: var(--box-shadow2);
@@ -140,6 +140,7 @@ header .icons #menu-bar{
 .accordion .details h2 {
     font-size: 4rem;
     display: flex;
+    justify-content: center;
     color: white;
 }
 
@@ -277,15 +278,15 @@ header .icons #menu-bar{
     box-shadow: var(--box-shadow);
 }
 
-.container .label .GF {
-    background: #E0B417;
+.container .label .DF {
+    background: #2FC1D6;
     padding: 8px 30px 8px 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
 }
 
-.container .label .LS {
-    background: #745FA9;
+.container .label .GF {
+    background: #E0B417;
     padding: 8px 30px 8px 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
@@ -334,7 +335,3 @@ header .icons #menu-bar{
     scale: 40%;
     box-shadow: var(--box-shadow3);
 }
-
-
-
-
