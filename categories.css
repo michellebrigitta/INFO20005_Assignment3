@@ -102,35 +102,44 @@ header .icons #menu-bar{
 }
 
 /* This is the CSS for Our Menus section */
-.dishes {
-    background-image: linear-gradient(#EDEFFC, #7E61BE);
+
+#parent {
+    position: relative;
     height: 860px;
 }
 
-/*
 .pattern img {
     display: flex;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    height: 2500px;
-    width: auto;
+    bottom: 0;
+    height: 860px;
+    width: 100%;
     background-image: linear-gradient(#EDEFFC, #7E61BE);
-} */
+    z-index: -10;
+} 
 
 .menu {
     margin: 0 auto;
     height: 250px;
 }
 
-.heading {
+.heading h1 {
     font-family: 'Dream Orphans', sans-serif;
     font-size: 7rem;
     font-weight: 700;
-    line-height: 100px;
+    line-height: 40px;
     color: var(--darkpurple);
     padding: 12rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    position: relative;
+    top: -100px;
 }
 
 .category-container {

@@ -104,21 +104,24 @@ header .icons #menu-bar{
 }
 
 /* This is the CSS for Our Menus section */
-/*
-.dishes {
-    background-image: linear-gradient(#EDEFFC, #7E61BE);
-    height: 2200px;
-} */
+
+#parent {
+    position: relative;
+    height: 2300px;
+}
 
 .pattern img {
     display: flex;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    height: 2500px;
-    width: auto;
+    bottom: 0;
+    height: 2300px;
+    width: 100%;
     background-image: linear-gradient(#EDEFFC, #7E61BE);
+    z-index: -10;
 } 
 
 .menu {
@@ -285,6 +288,8 @@ header .icons #menu-bar{
 .footer {
     background: var(--green);
     color: var(--darkpurple);
+    position: relative;
+    bottom: 0px;
 }
 
 .footer .upper {
