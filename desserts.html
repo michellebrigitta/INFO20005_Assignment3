@@ -30,9 +30,30 @@
 
     <div class="icons">
         <i class="fas fa-bars" id="menu-bar"></i>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
         <a href="#" class="fas fa-user"></a>
     </div>
+
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title"> Your Cart </h2>
+        <!-- Content -->
+        <div class="cart-content">
+
+        </div>
+
+        <div class="total">
+            <div class="total-title"> Total </div>
+            <div class="total-price"> $0 </div>
+        </div>
+
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy"> Buy Now </button>
+        <!-- Cart Close -->
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+
+    </div>
+
 </header>
     <!--navigation bar ends-->
 
@@ -119,21 +140,20 @@
         <!--browse menu section-->
             <section class="menus">
                 <div class="box-container">
-                    <a href="applerhubarb.html">
+
                         <div class="box">
                             <div class="image">
-                                <img src="images/homepage/applerhubarb.png" alt="">
-                                <div class="gradient"></div>
+                                <a href="applerhubarb.html">
+                                    <img src="images/homepage/applerhubarb.png" alt="" class="product-img">
+                                    <div class="gradient"></div>
+                                </a>
                             </div>
                             <div class="information">
-                                <h3> Apple & Rhubarb Crumble </h3>
-                                <span> 
-                                    <p> $5.90  </p>
-                                    <p class="add"> + </p>
-                                </span>
+                                <h3 class="product-title"> Apple & Rhubarb Crumble </h3>
+                                <span class="price"> $5.90 </span>
+                                <i class="fa-solid fa-plus add-cart"></i>
                             </div>
                         </div>
-                    </a>
 
                         <div class="box">
                             <div class="image">
@@ -142,10 +162,8 @@
                             </div>
                             <div class="information">
                                 <h3> Apple Custard Cake </h3>
-                                <span> 
-                                    <p> $5.90  </p>
-                                    <p class="add"> + </p>
-                                </span>
+                                <span class="price"> $5.90 </span>
+                                <i class="fa-solid fa-plus add-cart"></i>
                             </div>
                         </div>
 
@@ -156,10 +174,8 @@
                             </div>
                             <div class="information">
                                 <h3> Apricot Fruit Pie with Custard </h3>
-                                <span> 
-                                    <p> $5.30  </p>
-                                    <p class="add"> + </p>
-                                </span>
+                                <span class="price"> $5.30 </span>
+                                <i class="fa-solid fa-plus add-cart"></i>
                             </div>
                         </div>
 
@@ -190,6 +206,8 @@
     </section>
 
 <!--footer section ends-->
+
+<script src="cart.js"></script>
     
     </body>
     </html>

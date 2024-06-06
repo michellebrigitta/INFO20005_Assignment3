@@ -11,6 +11,8 @@
     --green: #B9BF02;
     --black: #1E1E1E;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --box-shadow2:0 .5rem 1.5rem rgba(126,97,190,.5);
+    --box-shadow3:0 .5rem 1.5rem rgba(0,0,0,.5);
     --content-font: 'Creato Display', sans-serif;
 }
 
@@ -99,6 +101,120 @@ header .icons a:hover{
 
 header .icons #menu-bar{
     display: none;
+}
+
+/* This is the CSS for the Shopping Cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--lightpurple);
+    box-shadow: var(--box-shadow3);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--darkpurple);
+    margin: 2rem;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--darkpurple);
+    outline-color: var(--green);
+    width: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cart-remove {
+    font-size: 2rem;
+    color: var(--darkpurple);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--darkpurple);
+}
+
+.total-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+    margin-top: .5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: white;
+    color: var(--darkpurple);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--green);
+    color: black;
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--darkpurple);
+    cursor: pointer;
 }
 
 /* This is the CSS for Our Menus section */
@@ -263,21 +379,25 @@ header .icons #menu-bar{
 } 
 
 
-.menus .box-container .box .information span .add {
+.menus .box-container .box .information .add-cart {
     position: relative;
-    bottom: -1px;
-    right: -20px;
+    bottom: 1.5px;
+    right: -285px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--purple);
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: white;
     border-radius: 50%;
     padding: 2px 2px 2px 2px;
     cursor: pointer;
+}
+
+.menus .box-container .box .information .add-cart:hover {
+    background: var(--darkpurple);
 }
 
 .menus .box-container .box .information span:hover {
@@ -312,4 +432,41 @@ header .icons #menu-bar{
     justify-content: center;
     font-size: 1.2rem;
     padding-bottom: 10px;
+}
+
+/* MEDIA QUERIES for responsive design */
+@media (max-width:768px) {
+    header .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .icons #menu-bar{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: white;
+    }
 }

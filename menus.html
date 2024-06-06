@@ -30,9 +30,30 @@
 
     <div class="icons">
         <i class="fas fa-bars" id="menu-bar"></i>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
         <a href="#" class="fas fa-user"></a>
     </div>
+
+    <!-- Cart -->
+    <div class="cart">
+        <h2 class="cart-title"> Your Cart </h2>
+        <!-- Content -->
+        <div class="cart-content">
+
+        </div>
+
+        <div class="total">
+            <div class="total-title"> Total </div>
+            <div class="total-price"> $0 </div>
+        </div>
+
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy"> Buy Now </button>
+        <!-- Cart Close -->
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+
+    </div>
+
 </header>
     <!--navigation bar ends-->
 
@@ -116,37 +137,35 @@
             <!--browse menu section-->
                 <section class="menus">
                     <div class="box-container">
-                        <a href="aromaticlamb.html">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="images/homepage/aromaticbraisedlamb.png" alt="">
-                                    <div class="gradient"></div>
-                                </div>
-                                <div class="information">
-                                    <h3> Aromatic Braised Lamb </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
 
-                        <a href="beefgoulash.html">
                             <div class="box">
                                 <div class="image">
-                                    <img src="images/homepage/beefgoulash.png" alt="">
-                                    <div class="gradient"></div>
+                                    <a href="aromaticlamb.html">
+                                        <img src="images/homepage/aromaticbraisedlamb.png" alt="" class="product-img">
+                                        <div class="gradient"></div>
+                                    </a>
                                 </div>
                                 <div class="information">
-                                    <h3> Beef Goulash </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
+                                    <h3 class="product-title"> Aromatic Braised Lamb </h3>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="image">
+                                    <a href="beefgoulash.html">
+                                        <img src="images/homepage/beefgoulash.png" alt="" class="product-img">
+                                        <div class="gradient"></div>
+                                    </a>
+                                </div>
+                                <div class="information">
+                                    <h3 class="product-title"> Beef Goulash </h3>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                     </span>
                                 </div>
                             </div>
-                        </a>
 
                             <div class="box">
                                 <div class="image">
@@ -154,11 +173,9 @@
                                     <div class="gradient"></div>
                                 </div>
                                 <div class="information">
-                                    <h3> Beef in Red Wine Casserole </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <h3 class="product-title"> Beef in Red Wine Casserole </h3>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -169,10 +186,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Butter Chicken </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -183,10 +198,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Chicken and Apricot Casserole </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -197,28 +210,24 @@
                                 </div>
                                 <div class="information">
                                     <h3> Chicken Casserole </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
-                        <a href="crumbedfish.html">
                             <div class="box">
                                 <div class="image">
-                                    <img src="images/homepage/crumbedfish.png" alt="">
-                                    <div class="gradient"></div>
+                                    <a href="crumbedfish.html">
+                                        <img src="images/homepage/crumbedfish.png" alt="" class="product-img">
+                                        <div class="gradient"></div>
+                                    </a>
                                 </div>
                                 <div class="information">
-                                    <h3> Crumbed Fish with Seasoned Wedges </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <h3 class="product-title"> Crumbed Fish with Seasoned Wedges </h3>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
-                        </a>
 
                             <div class="box">
                                 <div class="image">
@@ -227,10 +236,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Lemon Fish with Wedges </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -241,10 +248,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Lightly Battered Fish FIllet </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -255,10 +260,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Cheese and Spinach Pie </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -269,10 +272,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Lentil Patties with Vegetable Korma </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -283,28 +284,24 @@
                                 </div>
                                 <div class="information">
                                     <h3> Satay Vegetables with Zucchini Patty </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
-                        <a href="applerhubarb.html">
                             <div class="box">
                                 <div class="image">
-                                    <img src="images/homepage/applerhubarb.png" alt="">
-                                    <div class="gradient"></div>
+                                    <a href="applerhubarb.html">
+                                        <img src="images/homepage/applerhubarb.png" alt="" class="product-img">
+                                        <div class="gradient"></div>
+                                    </a>
                                 </div>
                                 <div class="information">
-                                    <h3> Apple & Rhubarb Crumble </h3>
-                                    <span> 
-                                        <p> $5.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <h3 class="product-title"> Apple & Rhubarb Crumble </h3>
+                                    <span class="price"> $5.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
-                        </a>
 
                             <div class="box">
                                 <div class="image">
@@ -313,10 +310,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Apple Custard Cake </h3>
-                                    <span> 
-                                        <p> $5.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $5.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -327,28 +322,24 @@
                                 </div>
                                 <div class="information">
                                     <h3> Apricot Fruit Pie with Custard </h3>
-                                    <span> 
-                                        <p> $5.30  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $5.30 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
-                        <a href="potatoleek.html">
                             <div class="box">
                                 <div class="image">
-                                    <img src="images/homepage/potatoleek.png" alt="">
-                                    <div class="gradient"></div>
+                                    <a href="potatoleek.html">
+                                        <img src="images/homepage/potatoleek.png" alt="" class="product-img">
+                                        <div class="gradient"></div>
+                                    </a>
                                 </div>
                                 <div class="information">
-                                    <h3> Bacon Potato and Leek Quiche </h3>
-                                    <span> 
-                                        <p> $7.30  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <h3 class="product-title"> Bacon Potato and Leek Quiche </h3>
+                                    <span class="price"> $7.30 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
-                        </a>
                         
                             <div class="box">
                                 <div class="image">
@@ -357,10 +348,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Baked Vegetable Pack </h3>
-                                    <span> 
-                                        <p> $7.30  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $7.30 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -371,10 +360,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Cheese and Bacon Pasta </h3>
-                                    <span> 
-                                        <p> $7.30  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $7.30 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -385,10 +372,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Economy - Beef Diane </h3>
-                                    <span> 
-                                        <p> $10.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $10.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -399,10 +384,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Economy - Hickory BBQ Beef </h3>
-                                    <span> 
-                                        <p> $10.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $10.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -413,10 +396,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Economy - Lamb and Almond Curry </h3>
-                                    <span> 
-                                        <p> $10.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $10.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -427,10 +408,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Shepherds Pie </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -441,10 +420,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Lamb Casserole </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -455,10 +432,8 @@
                                 </div>
                                 <div class="information">
                                     <h3> Turkey Rissoles </h3>
-                                    <span> 
-                                        <p> $16.90  </p>
-                                        <p class="add"> + </p>
-                                    </span>
+                                    <span class="price"> $16.90 </span>
+                                    <i class="fa-solid fa-plus add-cart"></i>
                                 </div>
                             </div>
 
@@ -489,6 +464,8 @@
     </section>
 
 <!--footer section ends-->
+
+<script src="cart.js"></script>
 
 </body>
 </html>
