@@ -548,7 +548,7 @@ input#postcode {
 
 
     .footer {
-        height: 140px;
+        height: 100px;
         padding: 1rem;
         position: relative;
         bottom: 210px;
@@ -559,5 +559,21 @@ input#postcode {
         left: -30px;
         top: 3px;
         font-size: 1.2rem;
+    }
+}
+
+/* FOR SURFACE PRO 7 */
+@media (min-width: 1368px) {
+    body {
+        width: 1368px;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        width: 1368px;
+    }
+
+    #parent .box {       
+        left: 970px;
     }
 }

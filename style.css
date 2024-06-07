@@ -864,7 +864,7 @@ header .icons #menu-bar{
     }
 
     .footer {
-        height: 140px;
+        height: 100px;
         padding: 1rem;
     }
 
@@ -874,3 +874,31 @@ header .icons #menu-bar{
         top: 3px;
     }
 }
+
+/* FOR SURFACE PRO 7 */
+@media (min-width: 1368px) {
+    body {
+        width: 1368px;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        width: 1368px;
+    }
+
+    .img-slider .slide img {
+        overflow: hidden;
+        width: 1090px;
+        height: 600px;
+    }
+
+    .img-slider .slide .gradient {
+        overflow: clip;
+        width: 1090px;
+    }
+
+    .browse .explore {
+        width: 1120px;
+    }
+}
+

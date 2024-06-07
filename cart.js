@@ -50,7 +50,7 @@ function ready() {
 
 //buy button function
 function buyButtonClicked() {
-    alert("Your order is placed")
+    window.open("filledcart.html", "_self");
     var cartContent = document.getElementsByClassName("cart-content")[0]
     while (cartContent.hasChildNodes()) {
         cartContent.removeChild(cartContent.firstChild);
