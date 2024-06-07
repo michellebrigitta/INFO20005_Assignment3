@@ -662,11 +662,12 @@ header .icons #menu-bar{
     }
 
     .img-slider .slide img {
-        scale: 250%;
+        width: 300px;
     }
 
     .img-slider .slide .gradient {
-        height: 150%;
+        height: 100%;
+        width: 300px;
     }
 
     .img-slider .slide .info {
@@ -726,6 +727,7 @@ header .icons #menu-bar{
         position: relative;
         top: -80px;
         left: -130px;
+        width: 390px;
     }
 
     .wrapper img.login {
@@ -736,8 +738,9 @@ header .icons #menu-bar{
 
     .wrapper .description {
         position: relative;
-        left: -180px;
+        left: -100px;
         scale: 50%;
+        width: 100px;
     }
 
     .wrapper .description h1, .wrapper .description h2 {
@@ -754,6 +757,10 @@ header .icons #menu-bar{
         right: 50px;
         left: -330px;
         width: 400px;
+    }
+
+    .wrapper2 {
+        left: -200px;
     }
 
     .wrapper2 img.login {
@@ -787,7 +794,8 @@ header .icons #menu-bar{
 
     .wrapper3 .description {
         position: relative;
-        left: -200px;
+        width: 100px;
+        left: -120px;
         bottom: 500px;
         scale: 50%;
     }
