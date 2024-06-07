@@ -476,6 +476,10 @@ header .icons #menu-bar{
 
 /* FOR IPHONE 12 PRO */
 @media (max-width: 420px) {
+    body {
+        height: 844px;
+    }
+
     header {
         padding: 1rem 2rem;
         width: 390px;
