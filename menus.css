@@ -489,7 +489,24 @@ header .icons #menu-bar{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
+    .cart {
+        width: 280px;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        padding: 1rem 2rem;
+        width: 390px;
+    }
+
+    header .logo {
+        scale: 70%;
+        position: relative;
+        left: -20px;
+    }
+
     .nav {
         padding: 11px;
     }
@@ -497,10 +514,60 @@ header .icons #menu-bar{
     .cart {
         width: 320px;
     }
-}
 
-@media (max-width: 360px) {
-    .cart {
-        width: 280px;
+    #parent {
+        height: 5500px;
+    }
+
+    .pattern img {
+        display: flex;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 5500px;
+    }
+
+    .menus {
+        height: 4500px;
+    }
+
+    .menu .heading {
+        line-height: 60px;
+        margin-top: -15px;
+    }
+
+    .menu .heading h1 {
+        width: 200px;
+        position: relative;
+        left: -20px;
+    }
+
+    .category-container {
+        position: relative;
+        left: -10px;
+        gap: 3rem;
+        row-gap: 1rem;
+        object-fit: contain;
+        scale: 90%;
+    }
+
+    .sort {
+        margin-left: 1rem;
+        padding: 0 10px 0;
+    }
+
+    .footer {
+        height: 140px;
+        padding: 1rem;
+    }
+
+    .footer .details {
+        position: relative;
+        left: -30px;
+        top: 3px;
+        font-size: 1.2rem;
     }
 }
