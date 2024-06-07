@@ -430,3 +430,134 @@ input#postcode {
         background: white;
     }
 }
+
+/* FOR IPHONE 12 PRO */
+@media (max-width: 420px) {
+    header {
+        padding: 1rem 2rem;
+        width: 390px;
+    }
+
+    header .logo {
+        scale: 70%;
+        position: relative;
+        left: -20px;
+    }
+
+    .nav {
+        padding: 11px;
+    }
+
+    #parent {
+        height: 720px;
+        width: 390px;
+    }
+
+    .pattern img {
+        display: flex;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1100px;
+        width: 390px;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading h1 {
+        line-height: 70px;
+    }
+
+    #parent .box {
+        scale: 80%;
+        position: relative;
+        top: 70px;
+        left: 20px;
+    }
+
+    #parent .container {
+        scale: 65%;
+        position: relative;
+        top: -60px;
+        left: -113px;
+    }
+
+    .product-card {
+        width: 500px;
+    }
+
+    .product-card .image {
+        scale: 85%;
+        position: relative;
+        left: 50px;
+    }
+
+    .product-card .details h2 {
+        scale: 90%;
+        position: relative;
+        left: 110px;
+        margin-top: 5px;
+    }
+
+    .product-card .details .quantity {
+        scale: 80%;
+        position: relative;
+        left: 110px;
+        bottom: -51px;
+    }
+
+    .product-card .price {
+        position: relative;
+        bottom: -105px;
+    }
+
+    .product-card .image2 {
+        scale: 85%;
+        position: relative;
+        left: 70px;
+    }
+
+    .product-card .details2 h2 {
+        scale: 90%;
+        position: relative;
+        left: 158px;
+        margin-top: 5px;
+    }
+
+    .product-card .details2 .quantity {
+        scale: 80%;
+        position: relative;
+        left: 155px;
+        bottom: -71px;
+    }
+
+    .summary {
+        width: 500px;
+    }
+
+    .button-container {
+        position: relative;
+        left: 170px;
+    }
+
+
+    .footer {
+        height: 140px;
+        padding: 1rem;
+        position: relative;
+        bottom: 210px;
+    }
+
+    .footer .details {
+        position: relative;
+        left: -30px;
+        top: 3px;
+        font-size: 1.2rem;
+    }
+}

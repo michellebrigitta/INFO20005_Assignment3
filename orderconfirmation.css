@@ -211,9 +211,10 @@ header .icons #menu-bar{
 .container form .button {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.container form button {
+.container form .button .confirm {
     width: 280px;
     height: 80px;
     padding: 12px;
@@ -222,10 +223,17 @@ header .icons #menu-bar{
     color: var(--darkpurple);
     margin-top: 45px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.container form button:hover {
+.container form .button .confirm .check-icon {
+    margin-left: 15px;
+}
+
+.container form .button .confirm:hover {
     background: var(--green);
     color: black;
 }
@@ -296,5 +304,75 @@ header .icons #menu-bar{
         margin: 1rem;
         font-size: 2rem;
         background: white;
+    }
+}
+
+/* FOR IPHONE 12 PRO */
+@media (max-width: 420px) {
+    header {
+        padding: 1rem 2rem;
+        width: 390px;
+    }
+
+    header .logo {
+        scale: 70%;
+        position: relative;
+        left: -20px;
+    }
+
+    .nav {
+        padding: 11px;
+    }
+
+    #parent {
+        height: 720px;
+        width: 390px;
+    }
+
+    .pattern img {
+        display: flex;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1000px;
+        width: 390px;
+    }
+
+    .menu {
+        width: 500px;
+        scale: 80%;
+        position: relative;
+        left: -50px;
+    }
+
+    .menu .heading h1 {
+        line-height: 70px;
+    }
+
+    #parent .container {
+        scale: 70%;
+        position: relative;
+        top: -200px;
+    }
+
+    .inputBox2 span {
+        color: var(--lightpurple);
+    }
+
+    .footer {
+        height: 140px;
+        padding: 1rem;
+        position: relative;
+        bottom: -250px;
+    }
+
+    .footer .details {
+        position: relative;
+        left: -30px;
+        top: 3px;
+        font-size: 1.2rem;
     }
 }
